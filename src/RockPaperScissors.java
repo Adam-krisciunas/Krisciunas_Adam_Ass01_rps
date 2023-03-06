@@ -9,7 +9,7 @@ public class RockPaperScissors {
         boolean playGame = true;
 
         while (playGame) {
-            // Get move choice from player A
+            
             System.out.print("Player A, enter your move (R/P/S): ");
             moveA = input.nextLine().toUpperCase();
             while (!moveA.equals("R") && !moveA.equals("P") && !moveA.equals("S")) {
@@ -17,7 +17,7 @@ public class RockPaperScissors {
                 moveA = input.nextLine().toUpperCase();
             }
 
-            // Get move choice from player B
+            
             System.out.print("Player B, enter your move (R/P/S): ");
             moveB = input.nextLine().toUpperCase();
             while (!moveB.equals("R") && !moveB.equals("P") && !moveB.equals("S")) {
@@ -25,7 +25,7 @@ public class RockPaperScissors {
                 moveB = input.nextLine().toUpperCase();
             }
 
-            // Determine the winner
+           
             if (moveA.equals(moveB)) {
                 if (moveA.equals("S")) {
                     System.out.println("Scissors vs Scissors it's a Tie!");
@@ -48,7 +48,7 @@ public class RockPaperScissors {
                 System.out.println("Player B wins! Scissors cuts paper.");
             }
 
-            // Ask to play again
+            
             System.out.print("Play again? (Y/N): ");
             playAgain = input.nextLine().toUpperCase();
             while (!playAgain.equals("Y") && !playAgain.equals("N")) {
